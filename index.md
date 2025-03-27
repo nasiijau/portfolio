@@ -4,9 +4,9 @@ layout: default
 <div class="gallery">
 	{% for video in site.data.videos %}
 	{% capture _ %}
-	{% increment x %}
+	{% increment sumpict %}
 	{% endcapture %}
-	<div class="example" onclick="openModal();currentSlide({{x}})" cursor>
+	<div class="example" onclick="openModal();currentSlide({{sumpict}})" cursor>
         <video class="content" src="{{video.video_path}}" autoplay loop muted></video>
       <div class="exampleInfo">
         <div class="info1">
@@ -40,9 +40,9 @@ layout: default
    <div class="column">
    	{% for video in site.data.videos %}
    	{% capture _ %}
-   	{% increment y %}
+   	{% increment sumpict2 %}
    	{% endcapture %}
-      <video class="democursor" src="{{video.video_path}}" onclick="currentSlide({{y}})" autoplay loop muted></video>
+      <video class="democursor" src="{{video.video_path}}" onclick="currentSlide({{sumpict2}})" autoplay loop muted></video>
       {% endfor %}
     </div>
   </div>
