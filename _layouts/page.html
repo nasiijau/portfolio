@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+    <script src="https://kit.fontawesome.com/3f0c52eb19.js" crossorigin="anonymous"></script>
+
+  </head>
+    <header>
+    <div class="title" onclick="location.href='{{site.url}}';"><img src="{{ site.baseurl }}/assets/png/title2.png"></div>
+    <div class="extras">
+      <div class="pages">
+        <a href="{{page.contact}}">contact</a>
+        <a>animation</a>
+        <a>drawings</a>
+      </div>
+      <div class="icons">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-bluesky"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+
+      </div>
+    </div>
+    
+  </header>
+  <body>
+    {{ content }}
+  </body>
+
+</html>

@@ -1,7 +1,59 @@
 ---
 ---
+header{
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+  display: flex;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: space-between;
+  color: #f1f1f1;
+  z-index: 1;
+  background-color: rgba(18,18,18,0.9);
+}
+
+h1, h2, h3, h4, p, a {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+h2{
+  margin:0;
+}
+
+.title {
+  float: left;
+}
+
+.title > img {
+  width: 100%;
+
+}
+
+.extras {
+  display: flex;
+  float: right;
+  align-items: center;
+}
+
+.pages{
+  padding-inline: 10px;
+}
+
+.pages > a {
+  padding-inline: 2px;
+}
+
+i:hover {
+  opacity: 0.5;
+}
+
+.icons{
+  padding-inline: 10px;
+}
+
 body{
-	background-color: black;
+	background-color: #121212;
 	margin:0;
 }
 
@@ -74,11 +126,10 @@ body{
   z-index: 1;
   left: 0;
   top: 0;
-  padding-top: 10px;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  background-color: rgba(18,18,18,0.9); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -86,7 +137,7 @@ body{
   position: relative;
   margin: auto;
   padding: 0;
-  width: 65%;
+  width: 90%;
 }
 
 /* The Close Button */
@@ -108,6 +159,9 @@ body{
 
 .mySlides {
   display: none;
+  align-items: center;
+  flex-direction: row;
+
 }
 
 .cursor {
@@ -131,12 +185,6 @@ body{
 /* Next & previous buttons */
 .prev,
 .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -146,10 +194,8 @@ body{
   -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.next{
+  float: right;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -158,28 +204,61 @@ body{
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-img {
-  margin-bottom: -4px;
-}
-
 .caption-container {
-  text-align: center;
-  padding: 2px 16px;
+  width: 360px;
+  padding-inline: 15px;
   color: white;
+  margin: 15px;
+}
+
+.video-container, .image-container {
+  padding-inline: 15px;
+  width: 840px;
+  height: auto;
 }
 
 .content {
 	width: 100%;
 }
 
+@media only screen and (max-width: 720px){
+  .mySlides {
+    flex-direction: column;
+  }
+  .video-container {
+  padding-inline: 0px;
+  width: auto;
+  height: auto;
+  }
+  .modal-content {
+  width: 100%;
+}
 
+  .caption-container {
+    width: 75%;
+  }
 
+}
+
+a{
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-inline: 10px;
+}
+a:hover{
+  opacity: 0.5;
+}
+
+.bio{
+  display: flex;
+}
+
+.bio > .text {
+  width: 60%;
+  padding: 5%;
+}
+
+.bio > .image {
+  width: 100%;
+  background-color: white;
+}

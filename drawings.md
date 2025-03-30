@@ -1,18 +1,18 @@
 ---
 layout: default
-title: animation
+title : drawings
 ---
 <div class="gallery">
-	{% for video in site.data.videos %}
+	{% for image in site.data.images %}
 	{% capture _ %}
-	{% increment ab %} 
+	{% increment sumpict %} 
 	{% endcapture %}
-	<div class="example" onclick="openModal();currentSlide({{ab}})" cursor>
-        <video class="content" src="{{video.video_path}}" autoplay loop muted></video>
+	<div class="example" onclick="openModal();currentSlide({{sumpict}})" cursor>
+      <image class="content" src="{{image.image_path}}"></image>
       <div class="exampleInfo">
         <div class="info1">
-            <h4>{{video.title}}</h4>
-          <p>{{video.desc}}</p>
+            <h4>{{image.title}}</h4>
+          <p>{{image.desc}}</p>
         </div>
       </div>
     </div>
@@ -22,19 +22,19 @@ title: animation
 <div id="myModal" class="modal" >
   <span class="close cursor" onclick="closeModal()">&times;</span>
   <div class="modal-content">
-	{% for video in site.data.videos %}
+	{% for image in site.data.images %}
    <div class="mySlides">
-    <div class="video-container">
-      <video class="content" src="{{video.video_path}}" autoplay loop controls muted></video>
-      <div class="menu-control">
+    <div class="image-container">
+      <image class="content" src="{{image.image_path}}"></image>
+           <div class="menu-control">
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
        </div>
     </div>
     <div class="caption-container">
       <div>
-        <h1>{{video.title}}</h1>
-          <p>{{video.desc}}</p>
+        <h1>{{image.title}}</h1>
+          <p>{{image.desc}}</p>
       </div>
       </div>
     </div>

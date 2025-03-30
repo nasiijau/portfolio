@@ -3,10 +3,37 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title> - </title>
+    <title>animation - nas</title>
     <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="https://kit.fontawesome.com/3f0c52eb19.js" crossorigin="anonymous"></script>
 
   </head>
+    <header>
+    <div class="title" onclick="location.href='http://localhost:4000';"><img src="/assets/png/title2.png"></div>
+    <div class="extras">
+      <div class="pages">
+          <div class="wrapper">
+      <nav class="site-nav">
+        <div class="drawer-container">
+          <div class="drawer">
+  <a class="nav-item" href="/contact/">contact</a>
+  <a class="nav-item" href="/drawings.html">drawings</a>
+  <a class="nav-item" href="/">animation</a>
+          </div>
+        </div>
+      </nav>
+  </div>
+      </div>
+      <div class="icons">
+        <a href="https://x.com/nasiijau"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://bsky.app/profile/nasiijau.bsky.social"><i class="fa-brands fa-bluesky"></i></a>
+        <a href="https://www.youtube.com/@nasiijau"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/nasiijau/"><i class="fa-brands fa-linkedin-in"></i></a>
+
+      </div>
+    </div>
+    
+  </header>
   <body>
     <div class="gallery">
 	
@@ -26,8 +53,8 @@
         <video class="content" src="videos/php.mp4" autoplay="" loop="" muted=""></video>
       <div class="exampleInfo">
         <div class="info1">
-            <h4>php</h4>
-          <p>wtf</p>
+            <h4>Lorem Ipsum</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pellentesque condimentum massa, ac ultrices leo. Pellentesque dapibus pretium nibh at malesuada. Curabitur at mi et odio sodales mollis. Nunc felis libero, volutpat eu tellus in, molestie placerat lorem. Ut consectetur mi eu hendrerit gravida. Morbi consequat elit sodales nisi lobortis iaculis.</p>
         </div>
       </div>
     </div>
@@ -87,6 +114,17 @@
       </div>
     </div>
     
+	
+	<div class="example" onclick="openModal();currentSlide(8)" cursor="">
+        <video class="content" src="videos/dragon.mp4" autoplay="" loop="" muted=""></video>
+      <div class="exampleInfo">
+        <div class="info1">
+            <h4>sgon</h4>
+          <p>testing</p>
+        </div>
+      </div>
+    </div>
+    
 </div>
 
 <div id="myModal" class="modal">
@@ -94,108 +132,152 @@
   <div class="modal-content">
 	
    <div class="mySlides">
-      <div class="numbertext">-</div>
+    <div class="video-container">
       <video class="content" src="videos/wanara.mp4" autoplay="" loop="" controls="" muted=""></video>
-         <div class="caption-container">
-      <h1>Wanara</h1>
+      <div class="menu-control">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+       </div>
+    </div>
+    <div class="caption-container">
+      <div>
+        <h1>Wanara</h1>
           <p>Key animation</p>
-    </div>
+      </div>
+      </div>
     </div>
       
    <div class="mySlides">
-      <div class="numbertext">-</div>
+    <div class="video-container">
       <video class="content" src="videos/php.mp4" autoplay="" loop="" controls="" muted=""></video>
-         <div class="caption-container">
-      <h1>php</h1>
-          <p>wtf</p>
+      <div class="menu-control">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+       </div>
     </div>
+    <div class="caption-container">
+      <div>
+        <h1>Lorem Ipsum</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pellentesque condimentum massa, ac ultrices leo. Pellentesque dapibus pretium nibh at malesuada. Curabitur at mi et odio sodales mollis. Nunc felis libero, volutpat eu tellus in, molestie placerat lorem. Ut consectetur mi eu hendrerit gravida. Morbi consequat elit sodales nisi lobortis iaculis.</p>
+      </div>
+      </div>
     </div>
       
    <div class="mySlides">
-      <div class="numbertext">-</div>
+    <div class="video-container">
       <video class="content" src="videos/true.mp4" autoplay="" loop="" controls="" muted=""></video>
-         <div class="caption-container">
-      <h1>njir</h1>
+      <div class="menu-control">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+       </div>
+    </div>
+    <div class="caption-container">
+      <div>
+        <h1>njir</h1>
           <p>true</p>
-    </div>
+      </div>
+      </div>
     </div>
       
    <div class="mySlides">
-      <div class="numbertext">-</div>
+    <div class="video-container">
       <video class="content" src="videos/mir.mp4" autoplay="" loop="" controls="" muted=""></video>
-         <div class="caption-container">
-      <h1>mir</h1>
+      <div class="menu-control">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+       </div>
+    </div>
+    <div class="caption-container">
+      <div>
+        <h1>mir</h1>
           <p>kyuu</p>
-    </div>
+      </div>
+      </div>
     </div>
       
    <div class="mySlides">
-      <div class="numbertext">-</div>
+    <div class="video-container">
       <video class="content" src="videos/bird.mp4" autoplay="" loop="" controls="" muted=""></video>
-         <div class="caption-container">
-      <h1>bord</h1>
+      <div class="menu-control">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+       </div>
+    </div>
+    <div class="caption-container">
+      <div>
+        <h1>bord</h1>
           <p>dor</p>
-    </div>
+      </div>
+      </div>
     </div>
       
    <div class="mySlides">
-      <div class="numbertext">-</div>
+    <div class="video-container">
       <video class="content" src="videos/leo.mp4" autoplay="" loop="" controls="" muted=""></video>
-         <div class="caption-container">
-      <h1>Leo</h1>
-          <p>Comp test</p>
+      <div class="menu-control">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+       </div>
     </div>
+    <div class="caption-container">
+      <div>
+        <h1>Leo</h1>
+          <p>Comp test</p>
+      </div>
+      </div>
     </div>
       
    <div class="mySlides">
-      <div class="numbertext">-</div>
+    <div class="video-container">
       <video class="content" src="videos/drag.mp4" autoplay="" loop="" controls="" muted=""></video>
-         <div class="caption-container">
-      <h1>Dragon</h1>
+      <div class="menu-control">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+       </div>
+    </div>
+    <div class="caption-container">
+      <div>
+        <h1>Dragon</h1>
           <p>testing</p>
+      </div>
+      </div>
     </div>
+      
+   <div class="mySlides">
+    <div class="video-container">
+      <video class="content" src="videos/dragon.mp4" autoplay="" loop="" controls="" muted=""></video>
+      <div class="menu-control">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+       </div>
+    </div>
+    <div class="caption-container">
+      <div>
+        <h1>sgon</h1>
+          <p>testing</p>
+      </div>
+      </div>
     </div>
       
 
-   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-   <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-
-
-   <div class="column">
-   	
-   	
-      <video class="democursor" src="videos/wanara.mp4" onclick="currentSlide(1)" autoplay="" loop="" muted=""></video>
-      
-   	
-      <video class="democursor" src="videos/php.mp4" onclick="currentSlide(2)" autoplay="" loop="" muted=""></video>
-      
-   	
-      <video class="democursor" src="videos/true.mp4" onclick="currentSlide(3)" autoplay="" loop="" muted=""></video>
-      
-   	
-      <video class="democursor" src="videos/mir.mp4" onclick="currentSlide(4)" autoplay="" loop="" muted=""></video>
-      
-   	
-      <video class="democursor" src="videos/bird.mp4" onclick="currentSlide(5)" autoplay="" loop="" muted=""></video>
-      
-   	
-      <video class="democursor" src="videos/leo.mp4" onclick="currentSlide(6)" autoplay="" loop="" muted=""></video>
-      
-   	
-      <video class="democursor" src="videos/drag.mp4" onclick="currentSlide(7)" autoplay="" loop="" muted=""></video>
-      
-    </div>
   </div>
 </div>
 
 <script>
 function openModal() {
-  document.getElementById("myModal").style.display = "block";
+  document.getElementById("myModal").style.display = "flex";
 }
 
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
+}
+
+var modal = document.getElementById('myModal');
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
 
 var slideIndex = 1;
@@ -222,7 +304,7 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
+  slides[slideIndex-1].style.display = "flex";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
@@ -230,4 +312,5 @@ function showSlides(n) {
 
 
   </body>
+
 </html>

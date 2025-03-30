@@ -1,31 +1,27 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en-US">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+    <title>contact - nas</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
     <script src="https://kit.fontawesome.com/3f0c52eb19.js" crossorigin="anonymous"></script>
 
   </head>
     <header>
-    <div class="title" onclick="location.href='{{site.url}}';"><img src="{{ site.baseurl }}/assets/png/title2.png"></div>
+    <div class="title" onclick="location.href='http://localhost:4000';"><img src="/assets/png/title2.png"></div>
     <div class="extras">
       <div class="pages">
           <div class="wrapper">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.minima.nav_pages | default: default_paths -%}
-    {%- assign page_titles = site.pages | map: 'title' | compact %}
-
-    {%- unless page_titles == empty %}
       <nav class="site-nav">
         <div class="drawer-container">
           <div class="drawer">
-            {%- include nav-items.html paths = page_paths %}
+  <a class="nav-item" href="/contact/">contact</a>
+  <a class="nav-item" href="/drawings.html">drawings</a>
+  <a class="nav-item" href="/">animation</a>
           </div>
         </div>
       </nav>
-    {%- endunless %}
   </div>
       </div>
       <div class="icons">
@@ -39,7 +35,16 @@
     
   </header>
   <body>
-    {{ content }}
+    <div class="bio">
+	<div class="text">
+		<h1>HELLO</h1>
+		<p>my name is nas! i love making art and animation</p>
+		<a href="mailto:nasiijau@gmail.com">nasiijau@gmail.com</a>
+	</div>
+	<div class="image">
+	</div>
+</div>
+
   </body>
 
 </html>
