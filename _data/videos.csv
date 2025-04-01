@@ -1,9 +1,20 @@
-video_path,title,desc
-videos/wanara.mp4,Wanara,Key animation
-videos/php.mp4,Lorem Ipsum,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pellentesque condimentum massa, ac ultrices leo. Pellentesque dapibus pretium nibh at malesuada. Curabitur at mi et odio sodales mollis. Nunc felis libero, volutpat eu tellus in, molestie placerat lorem. Ut consectetur mi eu hendrerit gravida. Morbi consequat elit sodales nisi lobortis iaculis."
-videos/true.mp4,njir,true
-videos/mir.mp4,mir,kyuu
-videos/bird.mp4,bord,dor
-videos/leo.mp4,Leo,Comp test
-videos/drag.mp4,Dragon,testing
-videos/dragon.mp4,sgon,testing
+video_path,title,desc,link
+wanara,Wanara,"2D Key animation for Tampar Production"
+animaniacs,Animaniacs,2D Key animation for Studio Yotta
+dandadan,Dandadan,2D Key Animation Layout and Genga for Science Saru
+challenger,Challenger,"Directing, Storyboard, 2D Animation, Compositing, Background Paint for the Challengers"
+area21,Area 21,"2D Key animation for Titmouse, Inc."
+scottpil,Scott Pilgrim Takes Off,2D Key Animation Layout & Genga for Science Saru
+bird,Fighter,Personal work
+classroom,Classroom, Personal work
+cotc,Craig before the Creek,2D Key animation
+wolfs,Wolves,"Personal Work Directing, Storyboarding, Animation, Background Painting, Compositing"
+gibes,Gibes Intro,"2D Key animation, Compositing, 3D Layout for Gibes",https://youtu.be/cwHmOt5iPyY
+hifirush,Hi-Fi Rush,"2D Key animation for Titmouse, Inc."
+marco,Marco and the Galaxy Dragon,2D Key Animation Layout & Genga
+odoriko,Odoriko,"Personal Work",https://youtu.be/jpJdiIRIivE
+pokemon,Pokemon Fanart,Personal Work
+sad,Fan art,Personal Work
+shirou,Fanart,Personal Work
+water,Water,For League of Legends
+ethan,Ethan,Fan art Personal work

@@ -8,7 +8,7 @@ title: animation
 	{% increment ab %} 
 	{% endcapture %}
 	<div class="example" onclick="openModal();currentSlide({{ab}})" cursor>
-        <video class="content" src="{{video.video_path}}" autoplay loop muted></video>
+        <video class="content" src="videos/{{video.video_path}}.mp4" autoplay loop muted></video>
       <div class="exampleInfo">
         <div class="info1">
             <h4>{{video.title}}</h4>
@@ -25,7 +25,7 @@ title: animation
 	{% for video in site.data.videos %}
    <div class="mySlides">
     <div class="video-container">
-      <video class="content" src="{{video.video_path}}" autoplay loop controls muted></video>
+      <video class="content" src="videos/{{video.video_path}}.mp4" autoplay loop controls muted></video>
       <div class="menu-control">
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -35,6 +35,7 @@ title: animation
       <div>
         <h1>{{video.title}}</h1>
           <p>{{video.desc}}</p>
+          <a href="videos/{{video.link}}">{{video.link}}</a>
       </div>
       </div>
     </div>
