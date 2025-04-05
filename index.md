@@ -8,7 +8,7 @@ title: animation
 	{% increment ab %} 
 	{% endcapture %}
 	<div class="example" onclick="openModal();currentSlide({{ab}})" cursor>
-        <video class="content" src="videos/{{video.video_path}}.mp4" autoplay loop muted></video>
+        <video class="content" src="thumbnails/{{video.video_path}}.mp4" autoplay loop muted></video>
       <div class="exampleInfo">
         <div class="info1">
             <h4>{{video.title}}</h4>
