@@ -8,7 +8,7 @@ title: animation
 	{% increment ab %} 
 	{% endcapture %}
 	<div class="example" onclick="openModal();currentSlide({{ab}})" cursor>
-        <video class="content" src="thumbnails/{{video.video_path}}.mp4" autoplay loop muted></video>
+        <video class="lazy content" data-src="thumbnails/{{video.video_path}}.mp4" autoplay loop muted></video>
       <div class="exampleInfo">
         <div class="info1">
             <h4>{{video.title}}</h4>
@@ -25,7 +25,7 @@ title: animation
 	{% for video in site.data.videos %}
    <div class="mySlides">
     <div class="video-container">
-      <video class="content" src="videos/{{video.video_path}}.mp4" preload="none" autoplay loop controls muted></video>
+      <video class="lazy content" data-src="videos/{{video.video_path}}.mp4" preload="none" autoplay loop controls muted></video>
       <div class="menu-control">
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -45,6 +45,10 @@ title: animation
 </div>
 
 <script>
+var lazyLoadInstance = new LazyLoad({
+  // Your custom settings go here
+});
+
 function openModal() {
   document.getElementById("myModal").style.display = "flex";
 }
@@ -90,11 +94,4 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
-$('video').each(function(){
-    if ($(this).is(":in-viewport")) {
-        $(this)[0].pause();
-    } else {
-        $(this)[0].play();
-    }
-})
 </script>

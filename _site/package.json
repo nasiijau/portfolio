@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "is-in-viewport": "^3.0.4",
-    "jquery": "^3.7.1"
+    "jquery": "^3.7.1",
+    "vanilla-lazyload": "^19.1.3"
   }
 }
