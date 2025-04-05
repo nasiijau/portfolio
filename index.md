@@ -25,7 +25,7 @@ title: animation
 	{% for video in site.data.videos %}
    <div class="mySlides">
     <div class="video-container">
-      <video class="content" src="videos/{{video.video_path}}.mp4" autoplay loop controls muted></video>
+      <video class="content" src="videos/{{video.video_path}}.mp4" loop controls muted></video>
       <div class="menu-control">
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -89,4 +89,12 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+$('video').each(function(){
+    if ($(this).is(":in-viewport")) {
+        $(this)[0].pause();
+    } else {
+        $(this)[0].play();
+    }
+})
 </script>
